@@ -1,0 +1,225 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+  /* footer, font white-transparency */
+  --transparent-white-text-color: rgba(255, 255, 255, 0.6);
+  /* hero,footer*/
+  --main-background-color: #2f303a;
+  --white-background-color: #ffffff;
+  /*hover-for-hero-btn:*/
+  --add-btn-accent-color: #188ce8;
+  /*team :*/
+  --add-background-color: #f5f4fa;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  color: var(--title-text-color);
+  background-color: var(--white-background-color);
+  /*letter-spacing в макеті зустрічається три значення цієї 
+  властивості. Цей самий розповсюджений, тому я його внесла в body*/
+  letter-spacing: 0.03em;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* додає спільні (повторювані) стилі для всіх кнопок
+див. .hero-btn .filter-btn
+ */
+.btn {
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-logo {
+  color: var(--black-text-color);
+}
+.header-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
+  color: var(--title-text-color);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+/*не працює, why? */
+.header-nav-link:active {
+  color: var(--accent-color);
+}
+.current {
+  color: var(--accent-color);
+}
+
+.header-contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-color);
+}
+/* main */
+
+/* hero */
+.hero {
+  background-color: var(--main-background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+.hero-btn {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+
+  background-color: var(--accent-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--add-btn-accent-color);
+}
+
+/* feature */
+
+.features-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-descr {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+/* activities */
+
+/* team */
+.team {
+  background-color: var(--add-background-color);
+}
+.team-item {
+  background-color: var(--white-text-color);
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-descr {
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+/* footer */
+
+.footer {
+  background-color: var(--main-background-color);
+}
+.footer-logo {
+  color: var(--white-text-color);
+}
+
+.address {
+  font-style: normal;
+}
+
+.footer-contact-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--transparent-white-text-color);
+}
+.footer-contact-link[href="https://goo.gl/maps/JHCXsqgSBJYCVwFo8"]
+{
+  color: var(--white-text-color);
+}
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--accent-color);
+}
+
+/* portfolio */
+.filter-btn {
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+.current-btn {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: 0.06em;
+}
+.projects-descr {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
