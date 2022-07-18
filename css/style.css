@@ -23,6 +23,20 @@ body {
   властивості. Цей самий розповсюджений, тому я його внесла в body*/
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3 {
+  margin: 0 auto;
+}
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 .link {
   text-decoration: none;
 }
