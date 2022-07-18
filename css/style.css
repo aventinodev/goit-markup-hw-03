@@ -26,9 +26,12 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 ul {
+  margin-top: 0;
+  margin-bottom: 0;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
@@ -36,6 +39,18 @@ ul {
 p {
   margin-block-start: 0;
   margin-block-end: 0;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid blue;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
 }
 .link {
   text-decoration: none;
@@ -79,7 +94,7 @@ p {
   border: none;
   cursor: pointer;
 }
-
+/* -----------HEADER---------------- */
 .header-logo {
   color: var(--black-text-color);
 }
@@ -89,7 +104,6 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
-  color: var(--title-text-color);
 }
 
 .header-nav-link:hover,
@@ -117,12 +131,17 @@ p {
 }
 /* main */
 
-/* hero */
+/* --------------HERO---------------- */
 .hero {
   background-color: var(--main-background-color);
 }
 
 .hero-title {
+  width: 696px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -132,11 +151,17 @@ p {
   color: var(--white-text-color);
 }
 .hero-btn {
+  display: inline-block;
+  min-width: 216px;
+  height: 50px;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
-
   background-color: var(--accent-color);
 }
 .hero-btn:hover,
@@ -144,9 +169,13 @@ p {
   background-color: var(--add-btn-accent-color);
 }
 
-/* feature */
-
+/*-------- FEATURE------------ */
+.features-item {
+  width: 270px;
+}
 .features-subtitle {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -158,16 +187,25 @@ p {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
-/* activities */
+/*----------- activities----------- */
+.activities.section {
+  padding-top: 0;
+}
 
-/* team */
+/*----------- team--------------- */
 .team {
   background-color: var(--add-background-color);
 }
 .team-item {
+  width: 270px;
   background-color: var(--white-text-color);
 }
+.team-item {
+  padding-bottom: 30px;
+}
 .team-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -175,7 +213,7 @@ p {
 }
 .team-descr {
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   color: var(--primary-text-color);
 }
