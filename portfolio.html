@@ -21,38 +21,41 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html" lang="en" class="logo link"
-        >Web<span class="header-logo">Studio</span>
-      </a>
+      <div class="container">
+        <a href="./index.html" lang="en" class="logo link"
+          >Web<span class="header-logo">Studio</span>
+        </a>
 
-      <nav class="header-nav">
-        <ul class="header-nav-list list">
-          <li class="header-item">
-            <a class="header-nav-link link" href="./index.html">Студия</a>
+        <nav class="header-nav">
+          <ul class="header-nav-list list">
+            <li class="header-item">
+              <a class="header-nav-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-item">
+              <a class="header-nav-link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="header-nav-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-contact-list list">
+          <li class="header-contact-item">
+            <a class="header-contact-link link" href="mailto:info@devstudio.com" target="_blank"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header-item">
-            <a class="header-nav-link link current" href="./portfilio.html">Портфолио</a>
-          </li>
-          <li class="header-item">
-            <a class="header-nav-link link" href="">Контакты</a>
+          <li class="header-contact-item">
+            <a class="header-contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="header-contact-list list">
-        <li>
-          <a class="header-contact-link link" href="mailto:info@devstudio.com" target="_blank"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="header-contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section class="portfolio">
-        <!-- <h1>Портфолио</h1>  невидимый-->
+      <section class="portfolio section">
+        <div class="container">
+                  <!-- <h1>Портфолио</h1>  невидимый-->
         <h1 class="visually-hidden">Портфолио</h1>
 
         <ul class="filter-list">
@@ -75,76 +78,96 @@
         <ul class="projects-list">
           <li class="projects-item list">
             <a class="projects-link">
-              <img src="./images/img-pf-1.jpg" alt="photo" />
-              <h2 class="projects-title">Технокряк</h2>
-              <p class="projects-descr">Веб-сайт</p>
+              <img src="./images/img-pf-1.jpg" alt="photo" class="card" />
+              <div class="projects-block-title">
+                <h2 class="projects-title">Технокряк</h2>
+                <p class="projects-descr">Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="projects-item list">
             <a class="projects-link">
               <img src="./images/img-pf-2.jpg" alt="photo" />
-              <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
-              <p class="projects-descr">Дизайн</p>
+              <div class="projects-block-title">
+                <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
+                <p class="projects-descr">Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="projects-item list">
             <a class="projects-link">
               <img src="./images/img-pf-3.jpg" alt="photo" />
-              <h2 class="projects-title">Ресторан Seafood</h2>
-              <p class="projects-descr">Приложение</p>
+              <div class="projects-block-title">
+                <h2 class="projects-title">Ресторан Seafood</h2>
+                <p class="projects-descr">Приложение</p>
+              </div>
             </a>
           </li>
           <li class="projects-item list">
             <a class="projects-link">
               <img src="./images/img-pf-4.jpg" alt="photo" />
-              <h2 class="projects-title">Проект Prime</h2>
-              <p class="projects-descr">Маркетинг</p>
+              <div class="projects-block-title">
+                <h2 class="projects-title">Проект Prime</h2>
+                <p class="projects-descr">Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="projects-item list">
             <a class="projects-link">
               <img src="./images/img-pf-5.jpg" alt="photo" />
-              <h2 class="projects-title">Проект Boxes</h2>
-              <p class="projects-descr">Приложение</p>
+              <div class="projects-block-title">
+                <h2 class="projects-title">Проект Boxes</h2>
+                <p class="projects-descr">Приложение</p>
+              </div>
             </a>
           </li>
           <li class="projects-item list">
             <a class="projects-link">
               <img src="./images/img-pf-6.jpg" alt="photo" />
-              <h2 class="projects-title">Inspiration has no Borders</h2>
-              <p class="projects-descr">Веб-сайт</p>
+              <div class="projects-block-title">
+                <h2 class="projects-title">Inspiration has no Borders</h2>
+                <p class="projects-descr">Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="projects-item list">
             <a class="projects-link">
               <img src="./images/img-pf-7.jpg" alt="photo" />
-              <h2 class="projects-title">Издание Limited Edition</h2>
-              <p class="projects-descr">Дизайн</p>
+              <div class="projects-block-title">
+                <h2 class="projects-title">Издание Limited Edition</h2>
+                <p class="projects-descr">Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="projects-item list">
             <a class="projects-link">
               <img src="./images/img-pf-8.jpg" alt="photo" />
-              <h2 class="projects-title">Проект LAB</h2>
-              <p class="projects-descr">Маркетинг</p>
+              <div class="projects-block-title">
+                <h2 class="projects-title">Проект LAB</h2>
+                <p class="projects-descr">Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="projects-item list">
             <a class="projects-link">
               <img src="./images/img-pf-9.jpg" alt="photo" />
-              <h2 class="projects-title">Growing Business</h2>
-              <p class="projects-descr">Приложение</p>
+              <div class="projects-block-title">
+                <h2 class="projects-title">Growing Business</h2>
+                <p class="projects-descr">Приложение</p>
+              </div>
             </a>
           </li>
         </ul>
+        </div>
+
       </section>
     </main>
     <footer class="footer">
-      <a href="./index.html" lang="en" class="logo link"
+      <div class="container">
+        <a href="./index.html" lang="en" class="logo link"
         >Web<span class="footer-logo">Studio</span>
-      </a>
-
-      <address class="address">
+        </a>
+        <address class="address">
         <ul class="footer-list list">
           <li class="footer-item">
             <a
@@ -164,7 +187,8 @@
             <a class="footer-contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </address>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
