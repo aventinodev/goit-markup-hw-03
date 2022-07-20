@@ -102,8 +102,8 @@ ul {
   align-items: center;
 }
 .header-nav { 
-  margin-right: auto;
   margin-left: 0;
+  margin-right: 0;
 
 }
 .header-nav-list {
@@ -118,8 +118,8 @@ ul {
   margin-left: auto;
 }
  
-.header-contact-item:not(:last-child) {
-  margin-right: 50px;
+.header-contact-item:not(:first-child) {
+  margin-left: 50px;
 }
 .header .logo {
   display: block;
