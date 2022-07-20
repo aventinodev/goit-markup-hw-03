@@ -316,8 +316,10 @@ display: flex;
 
 .filter-list {
   display: flex;
-  margin-bottom: 34px;
   justify-content: center;
+}
+.filter-item {
+  margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -354,7 +356,7 @@ display: flex;
   height: 404px;
 
 }
-.card { 
+.projects-link .card { 
   display: block;
   height: auto;
   width: 370px;
