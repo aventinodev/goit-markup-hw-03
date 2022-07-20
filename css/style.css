@@ -240,11 +240,15 @@ display: flex;
 }
 .activities-list {
   display: flex;
+  column-gap: 30px;
+}
+/* .activities-item:not(:last-child) { 
+  margin-right: 30px;
+}*/
+.activities-item {
+  width: calc((100% - 60px) / 3);
 }
 
-.activities-item:not(:last-child) {
-  margin-right: 30px;
-}
 /*----------- team--------------- */
 .team {
   background-color: var(--add-background-color);
@@ -353,7 +357,7 @@ display: flex;
   }
 .projects-item {
   width: 370px;
-  height: 404px;
+  /* height: 404px; */
 
 }
 .projects-link .card { 
