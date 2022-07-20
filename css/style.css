@@ -50,6 +50,9 @@ ul {
 .list {
   list-style: none;
 }
+.card {
+  display: block;
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -255,30 +258,38 @@ display: flex;
 }
 .team-list{
   display: flex;
+  column-gap: 30px;
 }
 .team-item {
-  width: 270px;
+  width: calc((100% - 90px) / 4);
+  
   background-color: var(--white-text-color);
 }
-.team-item {
+.team-block-title {
+  padding-top: 30px;
   padding-bottom: 30px;
- }
-.team-item:not(:last-child) {
-  margin-right: 30px;
 }
+/* .team-item {
+  padding-bottom: 30px;
+ } */
+/* .team-item:not(:last-child) {
+  margin-right: 30px;
+} */
 
 .team-subtitle {
-  margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+  
 }
 .team-descr {
+  text-align: center;
+
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   color: var(--primary-text-color);
 }
 /* footer */
@@ -361,9 +372,8 @@ display: flex;
 
 }
 .projects-link .card { 
-  display: block;
-  height: auto;
   width: 370px;
+  height: auto;
  
 }
 .projects-block-title {
