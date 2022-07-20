@@ -107,7 +107,10 @@ ul {
 }
 .header-nav-list {
   min-width: 281px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+.header-nav-list .header-item + .header-item {
+  margin-left: 50px;
 }
 .header-contact-list {
   margin-right: 0;
@@ -331,14 +334,13 @@ display: flex;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  
-}
+  }
 .projects-item {
   width: 370px;
   height: 404px;
-  
+
 }
-.card {
+.card { 
   display: block;
   height: auto;
   width: 370px;
