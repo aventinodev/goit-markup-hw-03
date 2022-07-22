@@ -251,7 +251,8 @@ display: flex;
   margin-right: 30px;
 }*/
 .activities-item {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  /* width: calc((100% - 60px) / 3); */
 }
 
 /*----------- team--------------- */
@@ -263,7 +264,8 @@ display: flex;
   column-gap: 30px;
 }
 .team-item {
-  width: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 3 * 30px) / 4);
+  /* width: calc((100% - 3 * 30px) / 4); */
   
   background-color: var(--white-text-color);
 }
@@ -342,6 +344,7 @@ display: flex;
   margin-right: 8px;
 }
 .filter-btn {
+  display: block;
   min-width: 73px;
   padding: 6px 22px;
   font-weight: 500;
@@ -368,8 +371,14 @@ display: flex;
   flex-wrap: wrap;
   gap: 30px;
   }
+
+.projects-link {
+  display: block;
+}
+
 .projects-item {
-  width: 370px;
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  /* width: 370px; */
   /* height: 404px; */
 
 }
